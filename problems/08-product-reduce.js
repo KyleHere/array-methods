@@ -16,7 +16,12 @@ console.log(productWithReduce([4, 3])); // 12
 */
 
 
-// your code here
+function productWithReduce(nums){
+  let product = nums.reduce(function(accum, el){
+    return accum * el;
+  })
+  return product;
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
