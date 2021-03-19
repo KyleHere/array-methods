@@ -14,7 +14,18 @@ console.log(unique(['a', 'b', 'c', 'b'])); // ['a', 'b', 'c']
 
 */
 
-// your code here
+function unique(arr){
+    let throwaway = [];
+    arr.map(function(el){
+        if(!throwaway.includes(el)){
+            throwaway.push(el)
+
+            return el;
+        }
+    })
+
+    return throwaway;
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
