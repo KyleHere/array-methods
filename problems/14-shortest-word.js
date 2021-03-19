@@ -14,7 +14,16 @@ console.log(shortestWord('do what you enjoy'));         // 'do'
 
 */
 
-// your code here
+function shortestWord(sentence){
+  let store = sentence.split(' ');
+  let shortest = store[0];
+  store.forEach(function(el){
+    if(el.length <= shortest.length){
+      shortest = el;
+    }
+  })
+  return shortest;
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
